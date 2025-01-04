@@ -1,0 +1,146 @@
+/* Styles globaux */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #4a00e0, #8e2de2);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+/* Titres stylisés */
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #4a00e0;
+  font-weight: 700;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #8e2de2;
+}
+
+/* Section générale */
+.multi-converter, .colorTester {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.multi-converter:hover, .colorTester:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Champs de saisie */
+input, select, button {
+  width: 100%;
+  max-width: 500px;
+  margin: 15px auto;
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #8e2de2;
+  box-shadow: 0 0 8px rgba(142, 45, 226, 0.4);
+  outline: none;
+}
+
+button {
+  background: linear-gradient(135deg, #4a00e0, #8e2de2);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.03);
+}
+/* Résultats stylisés */
+p#multiResult, p#conversionResult {
+  margin-top: 15px;
+  font-size: 1.4em;
+  font-weight: bold;
+  padding: 15px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #4a00e0, #8e2de2);
+  border: 2px solid #4a00e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+p#multiResult:hover, p#conversionResult:hover {
+  transform: scale(1.05);
+}
+
+.result-highlight {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #4a00e0;
+  background-color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-left: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tester les couleurs */
+.color-box {
+  width: 100%;
+  height: 150px;
+  margin-top: 10px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#colorFeedback {
+  font-size: 16px;
+  font-style: italic;
+  color: #666;
+}
+
+#colorFeedback.error {
+  color: red;
+}
+
+.color-box:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
