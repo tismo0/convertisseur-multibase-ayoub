@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convertisseur Multibase et Couleurs</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Convertisseur Multibase et Test Couleur</h1>
+
+    <!-- Section Convertisseur Multibase -->
+    <div class="multi-converter">
+      <h2>Convertir un nombre entre bases</h2>
+      <input id="multiInput" type="text" placeholder="Entrer un nombre">
+      <select id="fromBase">
+        <option value="2">Binaire</option>
+        <option value="8">Octal</option>
+        <option value="10">Décimal</option>
+        <option value="16">Hexadécimal</option>
+      </select>
+      <span>→</span>
+      <select id="toBase">
+        <option value="2">Binaire</option>
+        <option value="8">Octal</option>
+        <option value="10">Décimal</option>
+        <option value="16">Hexadécimal</option>
+      </select>
+      <button onclick="convertMultiBase()">Convertir</button>
+      <p id="multiResult">Résultat : </p>
+    </div>
+
+    <!-- Section Test Couleurs -->
+    <div class="colorTester">
+      <h2>Testez vos couleurs hexadécimales</h2>
+      <input id="colorInput" type="text" placeholder="Entrer un code couleur hex (#RRGGBB)">
+      <button onclick="testColor()">Afficher la couleur</button>
+      <div id="colorDisplay" class="color-box">
+        <p id="colorFeedback">Ici apparaîtra votre couleur !</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
